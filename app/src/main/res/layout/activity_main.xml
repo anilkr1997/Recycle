@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<ScrollView
+    android:background="@drawable/bacgroundfor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/Tv_hadder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:gravity="center"
+            android:padding="5dp"
+
+            android:text="Surat Sitilink Ltd.\n TRAVER TICKET"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="Ticket No "
+                android:textColor="@color/gray"
+                android:padding="5dp"
+
+                android:textSize="15dp"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:inputType="number"
+                android:id="@+id/tv_S_No"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="000000"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/appCompatTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="From"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/Spinner_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:padding="10dp"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextViewFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="To"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:visibility="gone"
+            android:id="@+id/Spinner_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:padding="10dp"
+            />
+<com.toptoche.searchablespinnerlibrary.SearchableSpinner
+    android:id="@+id/autosearch"
+    android:layout_margin="10dp"
+    android:minHeight="35dp"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableRight="@drawable/ic_baseline_search_24"
+    android:drawablePadding="10dp"
+    android:maxLines="2"
+    android:dropDownSelector="@color/black"
+    android:dropDownWidth="200dp">
+<!--    <requestFocus />-->
+    </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:background="@drawable/background"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:minHeight="35dp"
+            android:padding="5dp">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/barcodeurl"
+                android:minHeight="35dp"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:gravity="center_vertical"
+                android:hint="Enter URL,Phone number "
+                android:textColor="@color/gray"
+                android:padding="5dp"
+
+                android:textSize="15dp"
+
+                />
+
+<androidx.appcompat.widget.AppCompatSpinner
+    android:id="@+id/spinner_viewurl"
+    android:scrollbarStyle="outsideOverlay"
+    android:layout_weight="1.5"
+    android:entries="@array/tostation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+android:background="@drawable/background"
+
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/teciketquntity"
+                android:inputType="number"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Enter ticket quantity"
+                android:textColor="@color/gray"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:text="1"
+
+                android:maxLines="1"
+
+                />
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.9"
+                android:gravity="center_vertical"
+                android:text="Total Fare Rs."
+                android:textColor="@color/gray"
+                android:padding="5dp"
+                android:textSize="15dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Rs.00.00 "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:layout_weight="1"
+                android:maxWidth="200dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                >
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/purple_200"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:text="View"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:layout_weight="1"
+                android:maxWidth="200dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                >
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_print"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/purple_700"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="USB"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:maxWidth="200dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                >
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_blutooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/purple_200"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:text="Bluetooth"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
+
+</androidx.cardview.widget.CardView>

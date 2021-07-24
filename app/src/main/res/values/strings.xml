@@ -1,0 +1,19 @@
+<resources>
+    <array name="tostation">
+        <item>Delhi દિલ્હી</item>
+        <item>Up ઉત્તરે પ્રદેશ</item>
+        <item>surat સુરત</item>
+        <item>Amdha Bad અમધા ખરાબ</item>
+    </array>
+    <array name="stationfrom">
+
+        <item>Amdha bad અમધા ખરાબ</item>
+        <item>Up ઉત્તરે પ્રદેશ</item>
+        <item>surat સુરત</item>
+    </array>
+    <string name="customercare">Customer Care No : 18002330233</string>
+    <string name="app_name">Recycle</string>
+    <string name="notrefundable">This Ticket is not Refundable<br> </br>Customer Care No : 18002330233</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

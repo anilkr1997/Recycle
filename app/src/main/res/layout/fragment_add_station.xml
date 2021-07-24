@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/bacgroundfor"
+    tools:context=".fragment.AddStation">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:inputType="text"
+            android:id="@+id/tv_Station_name"
+            android:padding="10dp"
+            android:background="@drawable/background"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Station Name " />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:inputType="text"
+            android:id="@+id/tv_Station_name_gujrati"
+
+            android:padding="10dp"
+            android:background="@drawable/background"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gugrati"
+            android:hint="Enter Station Name in Gujariati" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:inputType="number"
+            android:id="@+id/fare"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Station Fare " />
+        <androidx.cardview.widget.CardView
+            android:layout_margin="30dp"
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:cardCornerRadius="10dp"
+            android:maxWidth="200dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.463"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.902">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple_700"
+                android:gravity="center"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</FrameLayout>
