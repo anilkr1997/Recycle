@@ -148,5 +148,5 @@ Button(
 Now we are done! Here is one of my receipts printed using this library (I bought a printer to test this and the printer was…)
 
 I hope that you found this article helpful!
-![Alt text]([https://example.com/path/to/image.png](https://github.com/anilkr1997/Recycle/blob/master/68747470733a2f2f64616e7473752e636f6d2f66696c65732f726563656970742d746865726d616c2d7072696e7465722e706e673f31.png))
+![Alt text](https://github.com/anilkr1997/Recycle/blob/master/68747470733a2f2f64616e7473752e636f6d2f66696c65732f726563656970742d746865726d616c2d7072696e7465722e706e673f31.png)
 
